@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #f0f2f5;
+}
+.mynavbar{
+    color: #2a3d66;
+    background-color: #f4f6f9;
+    border-bottom: 1px solid #898a8c;
+    z-index: 1000;
+}
+.navlogout{
+    height: 40px;
+    width: 80px;
+    border-radius: 15px;
+    background-color:#2a3d66 ;
+    color: white;
+    font-size: 17px;
+}
+.rightnavbox i{
+    font-size: 20px;
+    padding-top: 12px;
+    margin-right: 12px;
+    
+}
+.centerlist li{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 20px;
+}
+
+.drawer {
+    height: 100vh;
+    width: 250px;
+    background-color: #2a3d66;
+    color: white;
+    position: fixed;
+    left: -250px;
+    transition: 0.3s ease;
+    padding: 20px;
+    overflow-y: auto;
+    z-index: 999;
+}
+
+input {
+    display: none;
+}
+
+input :checked ~ .drawer {
+    left: 0;
+}
+.drawer img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.drawer h4 {
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.drawer p {
+    color: #b0b0b0;
+}
+
+.drawer hr {
+    border: 1px solid #fff;
+    margin: 15px 0;
+}
+
+.drawer ul {
+    list-style: none;
+    margin-top: 30px;
+}
+
+.drawer ul li {
+    margin-bottom: 20px;
+}
+
+.drawer ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.drawer ul li a:hover {
+    color: #ffac33;
+}
+
+.drawer ul li button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ffac33;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.drawer ul li button:hover {
+    background-color: #e88e25;
+}
+
+/* Drawer Button Styling */
+.drawer-toggle {
+    font-size: 30px;
+    color: #2a3d66;
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 10000;
+}
+
+.drawer-toggle:hover {
+    color: #ffac33;
+}
